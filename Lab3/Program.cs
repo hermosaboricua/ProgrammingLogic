@@ -30,5 +30,14 @@ class Program
             Console.WriteLine(count);
             count--;
         }
+        Console.WriteLine("\nProblem 4:");
+
+int number = 10;
+
+while (number <= 1000)
+{
+    Console.WriteLine(number);
+    number += 10;
+}
     }
 }
