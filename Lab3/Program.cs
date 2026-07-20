@@ -39,5 +39,13 @@ while (number <= 1000)
     Console.WriteLine(number);
     number += 10;
 }
+Console.WriteLine("\nProblem 5:");
+
+string[] seasons = { "Spring", "Summer", "Fall", "Winter" };
+
+foreach (string season in seasons)
+{
+    Console.WriteLine(season);
+}
     }
 }
