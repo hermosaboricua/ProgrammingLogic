@@ -62,5 +62,40 @@ else
 {
     Console.WriteLine("Invalid input. Please enter a number between 1 and 7.");
 }
+Console.WriteLine("\nProblem 7:");
+
+string[] books =
+{
+    "Harry Potter and the Sorcerer's Stone",
+    "The Hunger Games",
+    "The Hobbit"
+};
+
+string[] authors =
+{
+    "J.K. Rowling",
+    "Suzanne Collins",
+    "J.R.R. Tolkien"
+};
+
+for (int i = 0; i < books.Length; i++)
+{
+    Console.WriteLine(books[i] + " by " + authors[i]);
+}
+Console.WriteLine("\nProblem 8:");
+
+int[] temperatures = { 72, 65, 80, 68, 75 };
+
+Array.Sort(temperatures);
+
+Console.WriteLine("Temperatures in ascending order:");
+
+foreach (int temp in temperatures)
+{
+    Console.WriteLine(temp);
+}
+
+Console.WriteLine("Lowest temperature: " + temperatures[0]);
+Console.WriteLine("Highest temperature: " + temperatures[temperatures.Length - 1]);
     }
 }
