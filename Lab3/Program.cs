@@ -30,72 +30,77 @@ class Program
             Console.WriteLine(count);
             count--;
         }
+
         Console.WriteLine("\nProblem 4:");
 
-int number = 10;
+        int number = 10;
 
-while (number <= 1000)
-{
-    Console.WriteLine(number);
-    number += 10;
-}
-Console.WriteLine("\nProblem 5:");
+        while (number <= 1000)
+        {
+            Console.WriteLine(number);
+            number += 10;
+        }
 
-string[] seasons = { "Spring", "Summer", "Fall", "Winter" };
+        Console.WriteLine("\nProblem 5:");
 
-foreach (string season in seasons)
-{
-    Console.WriteLine(season);
-}
-Console.WriteLine("\nProblem 6:");
+        string[] seasons = { "Spring", "Summer", "Fall", "Winter" };
 
-string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+        foreach (string season in seasons)
+        {
+            Console.WriteLine(season);
+        }
 
-Console.Write("Enter a number (1-7): ");
-int dayNumber = int.Parse(Console.ReadLine()!);
+        Console.WriteLine("\nProblem 6:");
 
-if (dayNumber >= 1 && dayNumber <= 7)
-{
-    Console.WriteLine("Day: " + days[dayNumber - 1]);
-}
-else
-{
-    Console.WriteLine("Invalid input. Please enter a number between 1 and 7.");
-}
-Console.WriteLine("\nProblem 7:");
+        string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
-string[] books =
-{
-    "Harry Potter and the Sorcerer's Stone",
-    "The Hunger Games",
-    "The Hobbit"
-};
+        Console.Write("Enter a number (1-7): ");
+        int dayNumber = int.Parse(Console.ReadLine()!);
 
-string[] authors =
-{
-    "J.K. Rowling",
-    "Suzanne Collins",
-    "J.R.R. Tolkien"
-};
+        if (dayNumber >= 1 && dayNumber <= 7)
+        {
+            Console.WriteLine("Day: " + days[dayNumber - 1]);
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please enter a number between 1 and 7.");
+        }
 
-for (int i = 0; i < books.Length; i++)
-{
-    Console.WriteLine(books[i] + " by " + authors[i]);
-}
-Console.WriteLine("\nProblem 8:");
+        Console.WriteLine("\nProblem 7:");
 
-int[] temperatures = { 72, 65, 80, 68, 75 };
+        string[] books =
+        {
+            "Harry Potter and the Sorcerer's Stone",
+            "The Hunger Games",
+            "The Hobbit"
+        };
 
-Array.Sort(temperatures);
+        string[] authors =
+        {
+            "J.K. Rowling",
+            "Suzanne Collins",
+            "J.R.R. Tolkien"
+        };
 
-Console.WriteLine("Temperatures in ascending order:");
+        for (int i = 0; i < books.Length; i++)
+        {
+            Console.WriteLine(books[i] + " by " + authors[i]);
+        }
 
-foreach (int temp in temperatures)
-{
-    Console.WriteLine(temp);
-}
+        Console.WriteLine("\nProblem 8:");
 
-Console.WriteLine("Lowest temperature: " + temperatures[0]);
-Console.WriteLine("Highest temperature: " + temperatures[temperatures.Length - 1]);
+        int[] temperatures = { 72, 65, 80, 68, 75 };
+
+        Array.Sort(temperatures);
+
+        Console.WriteLine("Temperatures in ascending order:");
+
+        foreach (int temp in temperatures)
+        {
+            Console.WriteLine(temp);
+        }
+
+        Console.WriteLine("Lowest temperature: " + temperatures[0]);
+        Console.WriteLine("Highest temperature: " + temperatures[temperatures.Length - 1]);
     }
 }
