@@ -47,5 +47,20 @@ foreach (string season in seasons)
 {
     Console.WriteLine(season);
 }
+Console.WriteLine("\nProblem 6:");
+
+string[] days = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
+
+Console.Write("Enter a number (1-7): ");
+int dayNumber = int.Parse(Console.ReadLine()!);
+
+if (dayNumber >= 1 && dayNumber <= 7)
+{
+    Console.WriteLine("Day: " + days[dayNumber - 1]);
+}
+else
+{
+    Console.WriteLine("Invalid input. Please enter a number between 1 and 7.");
+}
     }
 }
