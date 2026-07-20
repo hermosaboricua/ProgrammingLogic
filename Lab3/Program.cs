@@ -20,5 +20,15 @@ class Program
                 Console.WriteLine(i);
             }
         }
+
+        Console.WriteLine("\nProblem 3:");
+
+        int count = 5;
+
+        while (count >= 1)
+        {
+            Console.WriteLine(count);
+            count--;
+        }
     }
 }
