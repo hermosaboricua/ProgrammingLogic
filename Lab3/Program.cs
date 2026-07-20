@@ -102,5 +102,17 @@ class Program
 
         Console.WriteLine("Lowest temperature: " + temperatures[0]);
         Console.WriteLine("Highest temperature: " + temperatures[temperatures.Length - 1]);
+        Console.WriteLine("\nProblem 9:");
+
+int[] countdown = { 5, 4, 3, 2, 1 };
+
+Array.Reverse(countdown);
+
+Console.WriteLine("Reversed array:");
+
+for (int i = 0; i < countdown.Length; i++)
+{
+    Console.WriteLine(countdown[i]);
+}
     }
 }
